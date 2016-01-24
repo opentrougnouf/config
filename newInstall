@@ -1,0 +1,1 @@
+pacman -S --needed vim xterm eclipse kicad vlc base-devel dmenu i3-wm firefox i3status dialog wpa_actiond ifplugd wpa_supplicant dhcpcd wget alsa-utils gnome-system-monitor gajim gtkspell gstreamer0.10-bad gnome-themes-standard hunspell-en hunspell-fr git gcc-go
