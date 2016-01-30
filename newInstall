@@ -1,4 +1,4 @@
-pacman -S --needed vim xterm eclipse kicad vlc base-devel dmenu i3-wm firefox i3status dialog wpa_actiond ifplugd wpa_supplicant dhcpcd wget alsa-utils gnome-system-monitor gajim gtkspell gstreamer0.10-bad gnome-themes-standard hunspell-en hunspell-fr git gcc-go amarok oxygen-kde4 xorg-xinit parted nautilus gvfs-goa gvfs-google btrfs-progs gst-libav noto-fonts ttf-liberation evince kdegraphics-okular vim-jellybeans xorg-xrandr arandr
+pacman -S --needed vim xterm eclipse kicad vlc base-devel dmenu i3-wm firefox i3status dialog wpa_actiond ifplugd wpa_supplicant dhcpcd wget alsa-utils gnome-system-monitor gajim gtkspell gstreamer0.10-bad gnome-themes-standard hunspell-en hunspell-fr git gcc-go amarok oxygen-kde4 xorg-xinit parted nautilus nautilus-open-terminal gvfs-goa gvfs-google btrfs-progs gst-libav noto-fonts ttf-liberation evince kdegraphics-okular vim-jellybeans xorg-xrandr arandr totem gnome-calculator gedit gnome-code-assistance clang libgit2-glib transmission-gtk file-roller virtualbox virtualbox-guest-utils dosfstools
 pacman -S --needed nvidia
 
 # Firefox
@@ -6,3 +6,9 @@ pacman -S --needed nvidia
 # about:config
 # Preferences:	Advanced>	autoscrolling:Y,smooth:N
 #				Search>		Google, show suggestions
+
+# /etc/makepkg.conf: -march=native -O2 j3
+
+
+# gpasswd -a trougnouf vboxusers
+# modprobe vboxdrv
