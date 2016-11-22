@@ -154,18 +154,53 @@ bindsym $mod+p mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-}
+#bar {
+#        status_command i3status
+#}
 
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5 
 bindcode 107 exec gnome-screenshot
 bindsym Shift+Print exec gnome-screenshot -w
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 5%+
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%-
-bindsym XF86AudioMute exec --no-startup-id amixer -q sset Master 0
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 5%+ # 1 on desktop
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%- # 1 on desktop
+bindsym XFAudioMute exec --no-startup-id amixer sset Master toggle
 bindsym XF86AudioPlay exec amarok -t
 bindsym XF86AudioStop exec amarok -s
 bindsym XF86AudioNext exec amarok -f
 bindsym XF86AudioPrev exec amarok -r
+
+# asyncial
+
+set $darkred     #604938
+set $darkcyan    #4F9692
+set $cyan        #DA9561
+set $white       #f8f8f8
+set $trueblack	 #000000
+
+# Start i3bar to display a workspace bar (plus the system information i3status finds out, if available)
+bar {
+        status_command i3status
+        tray_output primary
+	i3bar_command i3bar
+
+   	colors {
+	        statusline         	$cyan
+       	 	background        	$trueblack
+        	separator         	$trueblack
+
+#		                          BORDER       	BACKGROUND   	TEXT
+        	focused_workspace  	$darkcyan	    $darkcyan	    $trueblack
+        	inactive_workspace 	$darkcyan 	  $trueblack	  $cyan
+        	active_workspace  	$darkcyan 	  $trueblack 	  $cyan
+        	urgent_workspace  	$darkred      $darkred      $trueblack
+        	binding_mode	      $darkred      $darkred      $trueblack
+	}
+}
+
+## COLORS ##		        BORDER		    BACKGROUND	    TEXT		        INDICATOR
+client.focused          $darkcyan	    $darkcyan      	$white  $darkcyan   	$darkcyan
+client.unfocused        $trueblack    $trueblack    	$cyan		$trueblack	$trueblack
+client.focused_inactive $trueblack    $trueblack      $cyan   $trueblack  $trueblack
+client.urgent           $darkred    	$darkred    	  $black  $darkred    $darkred
+client.background $darkcyan
