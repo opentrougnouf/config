@@ -1,0 +1,12 @@
+cp -R /usr/share/arch/wallpaper ~/.wallpaper
+cd ~/.wallpaper
+rm *43*
+
+yaourt -S --needed liblastfm-qt5
+yaourt -S needed clementine-qt5-git
+
+# Firefox
+
+# about:config
+# Preferences:	Advanced>	autoscrolling:Y,smooth:N
+#				Search>		Google, show suggestions
