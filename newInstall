@@ -2,7 +2,17 @@ pacman -Syu --needed vim xterm eclipse kicad kicad-library kicad-library-3d vlc 
 i3status dialog wpa_actiond ifplugd wpa_supplicant dhcpcd wget alsa-utils gnome-system-monitor gajim gtkspell 
 gstreamer0.10-bad gnome-themes-standard hunspell-en hunspell-fr git gcc-go xorg-xinit parted nautilus 
 nautilus-open-terminal gvfs-goa gvfs-google btrfs-progs gst-libav noto-fonts ttf-liberation evince 
-kdegraphics-okular vim-jellybeans xorg-xrandr arandr totem gnome-calculator gedit gnome-code-assistance clang libgit2-glib transmission-gtk file-roller virtualbox virtualbox-guest-utils dosfstools picocom libreoffice-fresh hunspell hyphen hyphen-en hyphen-fr libmythes mythes-en mythes-fr languagetool gimp gedit-plugins openssh unrar eog redshift breeze breeze-kde4 terminology rofi sparsehash libmtp fftw archlinux-wallpaper feh steam-native-runtime
+kdegraphics-okular vim-jellybeans xorg-xrandr 
+arandr totem gnome-calculator gedit 
+gnome-code-assistance clang libgit2-glib 
+transmission-gtk file-roller virtualbox 
+virtualbox-guest-utils dosfstools picocom 
+libreoffice-fresh hunspell hyphen hyphen-en 
+hyphen-fr libmythes mythes-en mythes-fr 
+languagetool gimp gedit-plugins openssh unrar eog 
+redshift breeze breeze-kde4 terminology rofi 
+sparsehash libmtp fftw archlinux-wallpaper feh 
+steam-native-runtime scala sbt
 #pacman -S --needed nvidia
 
 
