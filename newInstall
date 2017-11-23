@@ -15,6 +15,7 @@ sparsehash libmtp fftw archlinux-wallpaper feh
 steam-native-runtime scala sbt
 #pacman -S --needed nvidia
 
+echo 'vm.swappiness=10' > /etc/sysctl.d/99.sysctl.conf
 
 # /etc/makepkg.conf: -march=native -O2 j3
 
